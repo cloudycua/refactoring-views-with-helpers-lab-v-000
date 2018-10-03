@@ -5,7 +5,7 @@ class Song < ActiveRecord::Base
 # with a Song instance
 
   def artist_name
-    artist.name if artist
+    self.artist.name if self.artist
   end
 
   def artist_name=(name)
